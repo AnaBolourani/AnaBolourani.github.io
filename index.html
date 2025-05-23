@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ana Bolourani | Statistical & Seismic AI</title>
+
+  <!-- SEO / Social -->
+  <meta name="description" content="Ph.D. candidate blending statistics with structural-health monitoring.">
+  <meta property="og:image" content="https://USERNAME.github.io/assets/ana.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/ana.jpg">
+
+  <!-- Google Fonts (or self-host) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles & Icons -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+  <!-- ✦ Navigation Bar ✦ -->
+  <header class="navbar">
+    <a class="logo" href="#top">Ana Bolourani</a>
+    <nav id="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode"><i data-feather="moon"></i></button>
+    </nav>
+    <button class="hamburger" aria-label="Open menu"><i data-feather="menu"></i></button>
+  </header>
+
+  <!-- ✦ Hero ✦ -->
+  <section id="top" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I’m <span class="accent">Ana</span>.</h1>
+      <p>Statistics × Seismology × AI.<br>I help buildings tell their stories through data.</p>
+      <a class="btn primary" href="#projects">View My Work</a>
+      <a class="btn outline" href="assets/resume.pdf" target="_blank">Résumé PDF</a>
+    </div>
+  </section>
+
+  <!-- ✦ About ✦ -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      Ph.D. candidate at UCLA Civil & Environmental Engineering, publishing on ground-motion
+      modelling and Bayesian inference. 2× Mathematics Olympiad competitor, Persian foodie, and
+      advocate for women in engineering.
+    </p>
+  </section>
+
+  <!-- ✦ Projects (auto-filled) ✦ -->
+  <section id="projects" class="section">
+    <h2>Selected GitHub Repositories</h2>
+    <div id="repo-grid" class="grid"></div>
+  </section>
+
+  <!-- ✦ Skills ✦ -->
+  <section id="skills" class="section">
+    <h2>Technical Stack</h2>
+    <ul class="chips">
+      <li>Python 3.12</li><li>Pytorch</li><li>TensorFlow</li>
+      <li>Tabular VAE</li><li>Bayesian Stats</li><li>Matplotlib&nbsp;& Seaborn</li>
+      <li>Git & GitHub Actions</li><li>LaTeX</li><li>SQL</li>
+    </ul>
+  </section>
+
+  <!-- ✦ Contact ✦ -->
+  <section id="contact" class="section">
+    <h2>Let’s Talk</h2>
+    <form action="https://formspree.io/f/{your-id}" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Email Address" required>
+      <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
+      <button class="btn primary" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Ana Bolourani · Built with <span aria-hidden>❤</span> & GitHub Pages
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
