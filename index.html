@@ -1,91 +1,88 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ana Bolourani | Statistical & Seismic AI</title>
+  <title>Anahita Bolourani | Statistical & Seismic AI</title>
 
-  <!-- SEO / Social -->
-  <meta name="description" content="Ph.D. candidate blending statistics with structural-health monitoring.">
-  <meta property="og:image" content="https://USERNAME.github.io/assets/ana.jpg">
-
-  <!-- Favicon -->
-  <link rel="icon" href="assets/ana.jpg">
-
-  <!-- Google Fonts (or self-host) -->
+  <!--  Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Styles & Icons -->
-  <link rel="stylesheet" href="css/style.css">
+  <!--  Feather Icons  -->
   <script src="https://unpkg.com/feather-icons"></script>
-</head>
 
+  <style>
+    /* ===  DESIGN TOKENS  === */
+    :root {
+      --font: 'Poppins', sans-serif;
+      --white: #fff;
+      --text: #f5f5f5;
+      --accent: #5aa9ff;
+      --border: rgba(255,255,255,.4);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font);color:var(--text);background:#000;width:100%;height:100vh;overflow-x:hidden}
+
+    /* ===  HERO  === */
+    .hero{
+      position:relative;width:100%;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 1rem;
+    }
+    .hero::before{content:"";position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat fixed;filter:brightness(.55);z-index:-2;}
+    .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:repeating-linear-gradient(to bottom,transparent 0 119px,rgba(255,255,255,.06) 120px 121px),repeating-linear-gradient(to right,transparent 0 119px,rgba(255,255,255,.06) 120px 121px);pointer-events:none;}
+
+    h1{font-size:clamp(2.5rem,5vw,4.5rem);letter-spacing:.25rem;font-weight:600;}
+    .subtitle{font-size:1rem;letter-spacing:.25rem;text-transform:uppercase;margin-top:1rem;}
+
+    .divider{width:80%;max-width:620px;height:1px;background:var(--border);margin:2.8rem auto;}
+
+    /* ===  TOP NAV  === */
+    .menu{position:absolute;top:1.5rem;left:50%;transform:translateX(-50%);display:flex;flex-wrap:wrap;justify-content:center;gap:1px;border:1px solid var(--border);backdrop-filter:blur(6px);max-width:840px;z-index:5;}
+    .menu a{flex:1 1 120px;padding:.6rem 1.2rem;text-decoration:none;color:var(--text);font-size:.8rem;letter-spacing:.14rem;text-transform:uppercase;text-align:center;}
+    .menu a:not(:last-child){border-right:1px solid var(--border)}
+    .menu a:hover{background:rgba(255,255,255,.12)}
+    @media(max-width:500px){.menu{flex-direction:column;top:.8rem;}
+      .menu a:not(:last-child){border-right:none;border-bottom:1px solid var(--border)}}
+
+    /* ===  FOOTER  === */
+    footer{position:absolute;bottom:1.5rem;width:100%;text-align:center;font-size:.75rem;letter-spacing:.1rem;color:rgba(255,255,255,.6)}
+    footer a{color:var(--accent);text-decoration:none}
+  </style>
+</head>
 <body>
-  <!-- ✦ Navigation Bar ✦ -->
-  <header class="navbar">
-    <a class="logo" href="#top">Ana Bolourani</a>
-    <nav id="nav-links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <button id="theme-toggle" aria-label="Toggle dark mode"><i data-feather="moon"></i></button>
-    </nav>
-    <button class="hamburger" aria-label="Open menu"><i data-feather="menu"></i></button>
+  <!--  Top navigation  -->
+  <nav class="menu" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
+    <a href="assets/resume.pdf" target="_blank">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero" id="top">
+    <i data-feather="code" size="64"></i>
+    <div class="divider" style="margin-top:2rem"></div>
+
+    <h1>Anahita Bolourani</h1>
+    <p class="subtitle">Ph.D. Candidate @ UCLA&nbsp;· Statistical Seismic AI</p>
+
+    <div class="divider"></div>
   </header>
 
-  <!-- ✦ Hero ✦ -->
-  <section id="top" class="hero">
-    <div class="hero-content">
-      <h1>Hi, I’m <span class="accent">Ana</span>.</h1>
-      <p>Statistics × Seismology × AI.<br>I help buildings tell their stories through data.</p>
-      <a class="btn primary" href="#projects">View My Work</a>
-      <a class="btn outline" href="assets/resume.pdf" target="_blank">Résumé PDF</a>
-    </div>
-  </section>
-
-  <!-- ✦ About ✦ -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      Ph.D. candidate at UCLA Civil & Environmental Engineering, publishing on ground-motion
-      modelling and Bayesian inference. 2× Mathematics Olympiad competitor, Persian foodie, and
-      advocate for women in engineering.
-    </p>
-  </section>
-
-  <!-- ✦ Projects (auto-filled) ✦ -->
-  <section id="projects" class="section">
-    <h2>Selected GitHub Repositories</h2>
-    <div id="repo-grid" class="grid"></div>
-  </section>
-
-  <!-- ✦ Skills ✦ -->
-  <section id="skills" class="section">
-    <h2>Technical Stack</h2>
-    <ul class="chips">
-      <li>Python 3.12</li><li>Pytorch</li><li>TensorFlow</li>
-      <li>Tabular VAE</li><li>Bayesian Stats</li><li>Matplotlib&nbsp;& Seaborn</li>
-      <li>Git & GitHub Actions</li><li>LaTeX</li><li>SQL</li>
-    </ul>
-  </section>
-
-  <!-- ✦ Contact ✦ -->
-  <section id="contact" class="section">
-    <h2>Let’s Talk</h2>
-    <form action="https://formspree.io/f/{your-id}" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="_replyto" placeholder="Email Address" required>
-      <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
-      <button class="btn primary" type="submit">Send Message</button>
-    </form>
-  </section>
+  <!-- placeholders for later sections -->
+  <main id="about" style="min-height:50vh;background:#111;color:#eee;padding:4rem 1.5rem;text-align:center;">About section placeholder</main>
+  <section id="publications" style="min-height:50vh;background:#141414;color:#eee;padding:4rem 1.5rem;text-align:center;">Publications placeholder</section>
+  <section id="research" style="min-height:50vh;background:#111;color:#eee;padding:4rem 1.5rem;text-align:center;">Research placeholder</section>
+  <section id="teaching" style="min-height:50vh;background:#141414;color:#eee;padding:4rem 1.5rem;text-align:center;">Teaching placeholder</section>
+  <section id="contact" style="min-height:40vh;background:#111;color:#eee;padding:4rem 1.5rem;text-align:center;">Contact placeholder</section>
 
   <footer>
-    © 2025 Ana Bolourani · Built with <span aria-hidden>❤</span> & GitHub Pages
+    © 2025 <code>abolourani.github.io</code> · Design inspired by HTML5 UP · Photo by <a href="https://unsplash.com/photos/-b29GHu_-e4" target="_blank" rel="noopener">Alexis Antoine</a> on Unsplash · Hosted via GitHub Pages
   </footer>
 
-  <script src="js/main.js" defer></script>
+  <script>feather.replace()</script>
 </body>
 </html>
