@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anahita Bolourani | Statistical & AI</title>
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <style>
+    /* ===  DESIGN TOKENS  === */
+    :root {
+      --font: 'Times New Roman', Times, serif;
+      --white: #fff;
+      --text: #f5f5f5;
+      --accent: #5aa9ff;
+      --border: rgba(255,255,255,.4);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font);color:var(--text);background:#000;width:100%;height:100vh;overflow-x:hidden}
+
+    /* ===  HERO  === */
+    .hero{position:relative;width:100%;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 1rem;}
+    .hero::before{content:"";position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat fixed;filter:brightness(.55);z-index:-2;}
+    .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:repeating-linear-gradient(to bottom,transparent 0 119px,rgba(255,255,255,.06) 120px 121px),repeating-linear-gradient(to right,transparent 0 119px,rgba(255,255,255,.06) 120px 121px);pointer-events:none;}
+
+    h1{font-size:clamp(2.5rem,5vw,4.5rem);letter-spacing:.25rem;font-weight:600;}
+    .subtitle{font-size:1rem;letter-spacing:.05rem;margin-top:1rem;line-height:1.5;}
+
+    .divider{width:80%;max-width:620px;height:1px;background:var(--border);margin:2.8rem auto;}
+
+    /* ===  TOP NAV  === */
+    .menu{position:absolute;top:1.5rem;left:50%;transform:translateX(-50%);display:flex;flex-wrap:wrap;justify-content:center;gap:1px;border:1px solid var(--border);backdrop-filter:blur(6px);max-width:840px;z-index:5;}
+    .menu a{flex:1 1 120px;padding:.6rem 1.2rem;text-decoration:none;color:var(--text);font-size:.8rem;letter-spacing:.14rem;text-transform:uppercase;text-align:center;}
+    .menu a:not(:last-child){border-right:1px solid var(--border)}
+    .menu a:hover{background:rgba(255,255,255,.12)}
+    @media(max-width:500px){.menu{flex-direction:column;top:.8rem;}.menu a:not(:last-child){border-right:none;border-bottom:1px solid var(--border)}}
+
+    /* ===  FOOTER  === */
+    footer{position:absolute;bottom:1.5rem;width:100%;text-align:center;font-size:.75rem;letter-spacing:.1rem;color:rgba(255,255,255,.6)}
+    footer a{color:var(--accent);text-decoration:none}
+  </style>
+</head>
+<body>
+  <!--  Top navigation  -->
+  <nav class="menu" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
+    <a href="assets/resume.pdf" target="_blank">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero" id="top">
+    
+    <div class="divider" style="margin-top:2rem"></div>
+
+    <h1>Anahita Bolourani</h1>
+    <p class="subtitle">PhD Candidate<br>Department of Statistics &amp; Data Science,<br>Department of Civil and Environmental Engineering,<br>University of California, Los Angeles (UCLA)</p>
+
+    <div class="divider"></div>
+  </header>
+
+  <!-- placeholders for later sections -->
+  <section id="about" style="min-height:60vh;background:#111;color:#eee;padding:4rem 1.5rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2rem;text-align:left;">
+    <img src="assets/ana.jpg" alt="Anahita Bolourani" style="width:200px;height:200px;border-radius:50%;object-fit:cover;box-shadow:0 4px 12px rgba(0,0,0,.5);">
+    <div style="max-width:600px;font-size:1.05rem;line-height:1.7;">
+      <p>Hi there! 
+      <p>I’m <strong>Anahita Bolourani</strong> (Ana), a Ph.D. candidate at UCLA who is passionate about artificial intelligence—especially diffusion models and large language models. My research blends advanced statistical theory with state‑of‑the‑art machine‑learning tools such as PyTorch and TensorFlow to push the limits of how we model, generate, and understand complex data. From image synthesis to seismic analysis and emotion‑aware systems, I explore ways generative models can drive real‑world impact.</p>
+      <p>
+      <p>Welcome to my GitHub page, where you’ll find my latest projects, publications, and occasional reflections on the future of AI.</p>
+    </div>
+  </section>
+  <section id="publications" style="min-height:60vh;background:#141414;color:#eee;padding:4rem 1.5rem;text-align:left;">
+    <h2 style="text-align:center;margin-bottom:3rem;font-size:2rem">Selected Publications</h2>
+    <ul style="max-width:900px;margin:0 auto;line-height:1.8;font-size:1rem;list-style:square inside;">
+      <li>Tak, A. N., Bolourani, A.,  Shank, D.B., &amp; Gratch, J. <em>Impact of LLM Alignment on Impression Formation in Social Interactions</em>, <strong>COLM</strong>, 2025. 
+      <li>Tak, A. N., Banayeeanzade, A., Bolourani, A., Kian, M., Jia, R., &amp; Gratch, J. <em>Mechanistic Interpretability of Emotion Inference in Large Language Models</em>, <strong>Findings of ACL</strong>, 2025. <a href="https://arxiv.org/abs/2502.05489" target="_blank" style="color:var(--accent)">arXiv</a></li>
+      <li>Bolourani, A., Burton, H., &amp; Bozorgnia, Y. <em>Evaluating Procedures for Estimating Vertical Seismic Load Effects Specified in the U.S. Building Code</em>, <strong>ASCE Journal of Structural Engineering</strong>, 2024.</li>
+      <li>Bolourani, A., et al. <em>Structural health monitoring using support vector machine and principal component analysis</em>, <strong>Structures</strong>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S2352012421006482" target="_blank" style="color:var(--accent)">ScienceDirect</a></li>
+      <li>Tak, A. N., Bolourani, A. , et al.<em>et&nbsp;al.</em> <em>BIM-based 4D mobile crane simulation and onsite operation management</em>, <strong>Automation in Construction</strong>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S092658052100217X" target="_blank" style="color:var(--accent)">ScienceDirect</a></li>
+      <li>Bolourani, A., Tak, A. N., et al. <em>Developing a BIM–SHM Integrated System for Disaster Risk Management Using Auto-Regressive Model</em>, 2019. <a href="https://www.researchgate.net/publication/344305338_DEVELOPING_A_BIM-SHM_INTEGRATED_SYSTEM_FOR_DISASTER_RISK_MANAGEMENT_USING_AUTO-REGRESSIVE_MODEL" target="_blank" style="color:var(--accent)">ResearchGate</a></li>
+    </ul>
+  </section>
+  <section id="research" style="min-height:60vh;background:#111;color:#eee;padding:4rem 1.5rem;text-align:left;">
+    <h2 style="text-align:center;margin-bottom:3rem;font-size:2rem">Research Experience</h2>
+    <ul style="max-width:900px;margin:0 auto;line-height:1.8;font-size:1rem;list-style:square inside;">
+      <li><strong>2022–Present</strong> — Graduate Research Assistant, <em>B. John Garrick Institute for the Risk Sciences, UCLA</em><br>Investigate vertical seismic load effects using Community Seismic Network and strong‑motion data; implement statistical models for ground‑motion analysis.</li>
+      <li><strong>2019–2021</strong> — Graduate Research Assistant, <em>University of Tehran</em><br>Developed machine‑learning pipelines for structural health monitoring of Structures.</li>
+      <li><strong>2017–2019</strong> — Master’s Thesis, <em>University of Tehran</em><br>“Numerical Study of Structural Health Monitoring via SVM &amp; PCA.”</li>
+    </ul>
+  </section>
+  <section id="teaching" style="min-height:60vh;background:#141414;color:#eee;padding:4rem 1.5rem;text-align:left;">
+    <h2 style="text-align:center;margin-bottom:3rem;font-size:2rem">Teaching </h2>
+    <p style="max-width:900px;margin:0 auto;font-size:1.05rem;line-height:1.7;">
+      I have more than three years of classroom experience, spanning two universities and a range of subjects from introduction to statistics and probability to graduate‑level ground motion characterization. At UCLA I have served as a teaching assistant for CEE 125, CEE 125, and CEE 245, guiding teams on numerical methods and programming workflows in MATLAB and Python. My teaching philosophy centres on active learning, inclusive discussion, and real‑world engineering case studies—skills I bring to every Zoom session and office hour.
+    </p>
+  </section>
+  <section id="contact" style="min-height:40vh;background:#111;color:#eee;padding:4rem 1.5rem;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.4rem;">
+    <h2 style="font-size:2rem;margin-bottom:1rem;">Get in Touch</h2>
+    <div style="display:flex;gap:2.2rem;font-size:1.1rem;flex-wrap:wrap;justify-content:center;">
+      <a href="https://scholar.google.com/citations?user=YOURID" target="_blank" style="color:var(--text);text-decoration:none;">Google&nbsp;Scholar</a>
+      <a href="https://github.com/AnaBolourani" target="_blank" style="color:var(--text);text-decoration:none;display:flex;align-items:center;gap:.4rem;"><i data-feather=\"github\"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/anahita-bolourani/" target="_blank" style="color:var(--text);text-decoration:none;display:flex;align-items:center;gap:.4rem;"><i data-feather=\"linkedin\"></i> LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 <code>abolourani.github.io</code> · Design inspired by HTML5 UP · Photo by <a href="https://unsplash.com/photos/landscape-photography-of-mountain-hit-by-sun-rays-78A265wPiO4" target="_blank" rel="noopener">Urban Vintage</a> on Unsplash · Hosted via GitHub Pages
+  </footer>
+
+  <script>feather.replace()</script>
+</body>
+</html>
